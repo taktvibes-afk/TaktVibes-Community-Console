@@ -1,0 +1,19 @@
+# Visual Studio generated files
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.pdb
+*.cache
+TestResults/
+# NEVER commit a signing private key, PFX or private certificate bundle
+*.pfx
+*.p12
+*.p8
+*.pvk
+*.key
+*.snk
+*.pem
+*.p7b
+*.p7c

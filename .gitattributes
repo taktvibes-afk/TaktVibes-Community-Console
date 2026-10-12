@@ -1,0 +1,15 @@
+# Canonical line endings also keep the shipped SHA256SUMS consistent
+# between ZIP extraction and Git checkout (including Windows).
+* text=auto
+*.md text eol=lf
+*.txt text eol=lf
+*.sh text eol=lf
+*.cs text eol=lf
+*.csproj text eol=lf
+*.sln text eol=lf
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+*.png binary
+*.cer binary
