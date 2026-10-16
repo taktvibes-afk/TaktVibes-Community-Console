@@ -1,15 +1,39 @@
-# Canonical line endings also keep the shipped SHA256SUMS consistent
-# between ZIP extraction and Git checkout (including Windows).
+# Legal / Documentation repository
+# Cross-platform line-ending policy
+
+# Let Git automatically detect text files.
 * text=auto
-*.md text eol=lf
-*.txt text eol=lf
-*.sh text eol=lf
-*.cs text eol=lf
-*.csproj text eol=lf
-*.sln text eol=lf
-*.ps1 text eol=crlf
-*.cmd text eol=crlf
-.gitattributes text eol=lf
-.gitignore text eol=lf
-*.png binary
-*.cer binary
+
+# Documentation and metadata files: keep LF in the repository.
+*.md   text eol=lf
+*.txt  text eol=lf
+*.json text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.xml  text eol=lf
+*.csv  text eol=lf
+
+# Windows scripts, if used.
+*.cmd  text eol=crlf
+*.bat  text eol=crlf
+*.ps1  text eol=crlf
+
+# Unix shell scripts, if used.
+*.sh   text eol=lf
+
+# Binary / non-text files: never change line endings.
+*.pdf  binary
+*.zip  binary
+*.7z   binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.ico  binary
+*.doc  binary
+*.docx binary
+*.xls  binary
+*.xlsx binary
+*.ppt  binary
+*.pptx binary
